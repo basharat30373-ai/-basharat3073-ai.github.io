@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basharat Hussain | Student Developer & AI Builder</title>
+    <title>Basharat Hussain | Tech Creator & AI Developer</title>
 
     <!-- Social Preview Tags -->
-    <meta property="og:title" content="Basharat Hussain | Student Developer & AI Builder">
-    <meta property="og:description" content="18-year-old Class 11 student exploring AI systems, software engineering, and application development.">
+    <meta property="og:title" content="Basharat Hussain | Tech Creator & AI Developer">
+    <meta property="og:description" content="18-year-old Class 11 student focusing on modern AI architecture, software design, and smart mobile apps.">
     <meta property="og:type" content="website">
 
     <style>
@@ -15,224 +15,196 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
         }
 
         body {
             background-color: #030712;
             color: #E2E8F0;
-            padding: 24px 20px 80px 20px;
-            max-width: 680px;
+            padding: 28px 20px 80px 20px;
+            max-width: 720px;
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.75;
         }
 
-        /* Top Header Navigation Card */
-        .top-nav {
-            background: rgba(15, 23, 42, 0.6);
+        /* Top Modern Bar */
+        .top-bar {
+            background: rgba(15, 23, 42, 0.5);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            padding: 14px 20px;
+            border-radius: 14px;
+            padding: 16px 22px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 48px;
-            backdrop-filter: blur(12px);
+            margin-bottom: 52px;
+            backdrop-filter: blur(10px);
         }
 
-        .profile-info {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .avatar {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: #1E293B;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
+        .brand-title {
             font-size: 14px;
-            color: #38BDF8;
-        }
-
-        .name-details h2 {
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+            font-weight: 800;
+            letter-spacing: 1px;
             color: #F8FAFC;
         }
 
-        .sub-roles {
+        .brand-subtitle {
             font-size: 10px;
-            color: #64748B;
+            color: #38BDF8;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             font-weight: 600;
             margin-top: 2px;
         }
 
-        .menu-btn {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #94A3B8;
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 500;
-            cursor: pointer;
-            text-decoration: none;
+        .status-pill {
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            color: #38BDF8;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
-        /* Status Label */
-        .status-tag {
+        /* Section Label */
+        .meta-label {
             font-size: 11px;
             letter-spacing: 2px;
-            color: #38BDF8;
+            color: #818CF8;
             text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-weight: 700;
+            margin-bottom: 12px;
         }
 
-        .status-tag::before {
-            content: '';
-            display: inline-block;
-            width: 2px;
-            height: 12px;
-            background: #38BDF8;
-        }
-
-        /* Hero Heading */
-        .hero-title {
-            font-size: 34px;
+        /* Hero Headlines */
+        .main-heading {
+            font-size: clamp(30px, 5vw, 44px);
             font-weight: 800;
-            line-height: 1.15;
+            line-height: 1.18;
             color: #F8FAFC;
             margin-bottom: 24px;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.8px;
         }
 
-        .hero-statement {
-            font-size: 38px;
-            font-weight: 800;
-            line-height: 1.15;
-            color: #F8FAFC;
-            margin-bottom: 48px;
-            letter-spacing: -0.5px;
-        }
-
-        .highlight-text {
-            background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+        .gradient-span {
+            background: linear-gradient(135deg, #38BDF8 0%, #A855F7 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        /* Content Sections */
-        .section-label {
-            font-size: 11px;
-            letter-spacing: 2px;
-            color: #38BDF8;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 16px;
+        .intro-text {
+            font-size: 18px;
+            color: #94A3B8;
+            margin-bottom: 44px;
+            font-weight: 400;
+            max-width: 650px;
         }
 
-        .section-heading {
-            font-size: 22px;
+        /* Content Blocks */
+        .content-block {
+            margin-top: 48px;
+        }
+
+        .block-title {
+            font-size: 20px;
             font-weight: 700;
             color: #F8FAFC;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .block-text {
+            font-size: 15px;
+            color: #94A3B8;
             margin-bottom: 16px;
         }
 
-        .paragraph {
-            font-size: 16px;
-            color: #94A3B8;
-            margin-bottom: 20px;
-            line-height: 1.7;
-            font-weight: 400;
+        /* Stack List */
+        .stack-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 18px;
         }
 
-        /* Floating AI Badge */
-        .ai-float {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            background: rgba(15, 23, 42, 0.8);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            border-radius: 12px;
-            padding: 10px 16px;
-            color: #38BDF8;
+        .stack-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 16px;
+            border-radius: 8px;
             font-size: 13px;
-            font-weight: 700;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            color: #CBD5E1;
+            font-weight: 500;
         }
 
         footer {
-            margin-top: 60px;
+            margin-top: 70px;
             padding-top: 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
             color: #475569;
             font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <div class="top-nav">
-        <div class="profile-info">
-            <div class="avatar">BH</div>
-            <div class="name-details">
-                <h2>BASHARAT HUSSAIN</h2>
-                <div class="sub-roles">STUDENT DEVELOPER · AI BUILDER</div>
-            </div>
+    <!-- Navigation Header -->
+    <div class="top-bar">
+        <div>
+            <div class="brand-title">BASHARAT HUSSAIN</div>
+            <div class="brand-subtitle">CLASS 11TH · TECH INNOVATOR</div>
         </div>
-        <a href="#about" class="menu-btn">Menu</a>
+        <div class="status-pill">⚡ ACTIVE BUILDER</div>
     </div>
 
-    <!-- Status -->
-    <div class="status-tag">SYSTEM · ONLINE</div>
+    <!-- Hero Title -->
+    <div class="meta-label">OVERVIEW & PERSPECTIVE</div>
+    <h1 class="main-heading">
+        Building intelligent software & next-gen <span class="gradient-span">AI workflows.</span>
+    </h1>
 
-    <!-- Hero Titles -->
-    <h1 class="hero-title">HELLO 👋<br>I'M BASHARAT HUSSAIN 💫</h1>
+    <p class="intro-text">
+        An 18-year-old student exploring how modern computer science, machine intelligence, and thoughtful design intersect to solve practical problems.
+    </p>
 
-    <div class="hero-statement">
-        I'm learning how ideas become <span class="highlight-text">intelligent systems.</span>
+    <!-- Story / Background -->
+    <div class="content-block">
+        <div class="meta-label">BACKGROUND</div>
+        <div class="block-title">🎯 The Journey So Far</div>
+        <p class="block-text">
+            I am currently in Class 11th, balancing rigorous academic studies with hands-on software development. Rather than viewing technology purely from a user standpoint, I focus on understanding underlying architectures, prompt pipelines, and modern web frameworks.
+        </p>
+        <p class="block-text">
+            My primary goal is to transform complex technical concepts into lightweight, highly functional applications that deliver seamless user experiences.
+        </p>
     </div>
 
-    <!-- Sub Question Section -->
-    <div class="section-label">THE VISION</div>
-    <div class="section-heading">What happens when a student stops just using tech and starts building it?</div>
-
-    <!-- Main About Content -->
-    <p class="paragraph">
-        Hello, I'm Basharat. I'm a Class 11 student and I'm 18 years old, exploring artificial intelligence, software design, computational logic, and AI-assisted application development.
-    </p>
-
-    <p class="paragraph">
-        I research, prototype, test, and build real-world tools—focusing on modern code structure and AI integrations to understand how scalable software systems operate.
-    </p>
-
-    <!-- Future Goals -->
-    <div class="section-label">CURRENT FOCUS</div>
-    <p class="paragraph">
-        Currently engineering responsive interfaces and experimenting with AI agents that automate workflows. My primary objective is to continuously refine my skill set through hands-on development.
-    </p>
-
-    <!-- Floating Badge -->
-    <div class="ai-float">AI</div>
+    <!-- Primary Focus -->
+    <div class="content-block">
+        <div class="meta-label">CORE INTERESTS</div>
+        <div class="block-title">🧬 Engineering Focus</div>
+        <p class="block-text">
+            My current domain of research and prototyping involves:
+        </p>
+        <div class="stack-list">
+            <span class="stack-item">🛠️ Artificial Intelligence Systems</span>
+            <span class="stack-item">📱 Mobile Application Architecture</span>
+            <span class="stack-item">⚡ Automation & Agentic Workflows</span>
+            <span class="stack-item">🎨 Minimalist Interface Design</span>
+        </div>
+    </div>
 
     <footer>
-        Thank you for visiting my website and taking the time to explore my work.
+        <div>Designed & Coded by Basharat Hussain</div>
+        <div>Class 11th Student · 18 Years Old</div>
     </footer>
 
 </body>
