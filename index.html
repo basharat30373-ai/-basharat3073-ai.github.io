@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basharat Hussain - App Developer & AI Builder">
+    <title>Basharat Hussain | App Developer & AI Builder</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #050816;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #6c5ce7;
+            filter: blur(180px);
+            opacity: 0.18;
+            top: -180px;
+            left: -180px;
+            z-index: -1;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 450px;
+            height: 450px;
+            background: #00d9ff;
+            filter: blur(180px);
+            opacity: 0.12;
+            bottom: -150px;
+            right: -150px;
+            z-index: -1;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: rgba(5, 8, 22, 0.75);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #00d9ff;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 14px;
+            border: 1px solid rgba(0, 217, 255, 0.4);
+            border-radius: 30px;
+            color: #00d9ff;
+            font-size: 13px;
+            margin-bottom: 25px;
+            background: rgba(0, 217, 255, 0.05);
+        }
+
+        h1 {
+            font-size: clamp(40px, 6vw, 100px);
+            line-height: 0.95;
+            margin-bottom: 25px;
+            letter-spacing: -4px;
+        }
+
+        h1 span {
+            background: linear-gradient(90deg, #ffffff, #00d9ff, #8a7cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #a7adbd;
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background: #00d9ff;
+            color: #031018;
+        }
+
+        .btn.secondary {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: white;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #a7adbd;
+            max-width: 650px;
+            margin-bottom: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 28px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.035);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(0, 217, 255, 0.35);
+            background: rgba(255, 255, 255, 0.055);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #a7adbd;
+            font-size: 15px;
+        }
+
+        .card.project {
+            border-left: 3px solid #00d9ff;
+        }
+
+        .status {
+            display: inline-block;
+            color: #00d9ff;
+            font-size: 12px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .vision {
+            text-align: center;
+            padding: 100px 8%;
+        }
+
+        .vision h2 {
+            font-size: clamp(35px, 5vw, 65px);
+            max-width: 850px;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 8%;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: #73798a;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 16px 5%;
+            }
+            nav a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+            .hero, section {
+                padding: 70px 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">BASHARAT<span>.</span></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#building">Building</a>
+            <a href="#journey">Journey</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="tag">APP DEVELOPER · AI BUILDER</div>
+                <h1>
+                    Building toward<br>
+                    <span>intelligent applications.</span>
+                </h1>
+                <p>
+                    I'm Basharat Hussain - exploring software development, artificial intelligence, and the process of turning ideas into useful digital experiences.
+                </p>
+                <div class="buttons">
+                    <a class="btn primary" href="#building">Explore My Work</a>
+                    <a class="btn secondary" href="#about">About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About</h2>
+            <p class="section-subtitle">
+                A simple beginning with a long-term vision.
+            </p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Who I Am</h3>
+                    <p>I'm learning app development and exploring how modern technology can be used to build useful products.</p>
+                </div>
+                <div class="card">
+                    <h3>What I Explore</h3>
+                    <p>Artificial intelligence, software development, automation, creative tools, and digital products.</p>
+                </div>
+                <div class="card">
+                    <h3>My Approach</h3>
+                    <p>Learn, experiment, build, improve, and keep moving forward one step at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="building">
+            <h2 class="section-title">What I'm Building</h2>
+            <p class="section-subtitle">This is where my development journey is taking shape.</p>
+            <div class="grid">
+                <div class="card project">
+                    <span class="status">In Development</span>
+                    <h3>AI-Powered Application</h3>
+                    <p>I'm currently working toward my own AI-powered application. The project is still in development, so details will be shared as it takes shape.</p>
+                </div>
+                <div class="card">
+                    <span class="status">Exploring</span>
+                    <h3>AI & Software</h3>
+                    <p>Learning how AI systems, applications, APIs, and modern development tools work together.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey">
+            <h2 class="section-title">Current Journey</h2>
+            <p class="section-subtitle">
+                The goal isn't to pretend I've already arrived. The goal is to keep building until I do.
+            </p>
+            <div class="grid">
+                <div class="card">
+                    <h3>01 - Learn</h3>
+                    <p>Building my foundation in programming and modern software development.</p>
+                </div>
+                <div class="card">
+                    <h3>02 - Build</h3>
+                    <p>Turning ideas into working prototypes and experimenting with real technology.</p>
+                </div>
+                <div class="card">
+                    <h3>03 - Improve</h3>
+                    <p>Iterating on projects and learning from every version I create.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision">
+            <h2>The future starts with something small.</h2>
+            <p style="color: #a7adbd; margin-top: 20px;">
+                This portfolio is the beginning of my public development journey. More projects will appear here as I build them.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Basharat Hussain - App Developer & AI Builder
+    </footer>
+
+</body>
+</html>
